@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Technical Documentation</title>
+</head>
+<style>
+  body {
+    display: flex;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #E4EFE7;
+  }
+
+  #navbar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 200px;
+    height: 100vh;
+    padding: 10px;
+    opacity: 1;
+    color: #050505;
+    background-color: #9dcace;
+  }
+
+  #navbar header {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+
+  }
+
+  .nav-link {
+    display: block;
+    margin: 5px;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 30px;
+
+  }
+
+
+  .nav-link:hover {
+    color: blue;
+
+  }
+
+  #main-doc {
+    margin-left: 220px;
+    padding: 20px;
+    max-width: 800px;
+
+  }
+
+  .main-section {
+    margin-bottom: 50px;
+    line-height: 28px;
+  }
+
+  .main-section header {
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+
+  img {
+    max-width: 100%;
+    height: 20pc;
+  }
+
+  @media (max-width: 768px) {
+    #navbar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+
+    #main-doc {
+      margin-left: 0;
+      padding-top: 20px
+    }
+  }
+</style>
+<body>
+  <nav id="navbar">
+    <header>Technical Documentation</header>
+    <a class="nav-link" href="#Song_title">Song title</a>
+    <a class="nav-link" href="#Remix_song">Remix song</a>
+    <a class="nav-link" href="#Dance_Genre">Dance Genre</a>
+    <a class="nav-link" href="#Cyber_Scam">Cyber Scam</a>
+    <a class="nav-link" href="#Vans_Old_skool_shoes">Vans Old skool shoes</a>
+    <a class="nav-link" href="#Head_phone">Head phone</a>
+  </nav>
+
+  <main id="main-doc">
+    <section class="main-section">
+      <header>Song title</header>
+      <p>Choosing a good song title is crucial.</p>
+      <p>Make it memorable and reflective of the song theme.</p>
+      <code>const songTitle = "My Hit Song";</code>
+    </section>
+
+    <section class="main-section">
+      <header>Remix song</header>
+      <p>A remix is a reworked version of a song.</p>
+      <ul>
+        <li>Get legal permissions for remixing songs.</li>
+        <li>Remixes often combine multiple styles.</li>
+        <li>Use <code>remixTrack("song.mp3");</code> for digital remixes.</li>
+      </ul>
+      <p>Example code:</p>
+      <code>function remixTrack(song) { return "Remixed " + song; }</code>
+    </section>
+
+    <section class="main-section">
+      <header>Dance Genre</header>
+      <p>Hip-hop is energetic and culturally significant.</p>
+      <p>Folk dances reflect traditions and heritage.</p>
+      <ul>
+        <li>Hip-hop</li>
+        <li>Ballet</li>
+        <li>Breakdance</li>
+      </ul>
+      <code>const danceStyle = "Hip-hop";</code>
+    </section>
+
+    <section class="main-section">
+      <header>Cyber Scam</header>
+      <p>Cyber scams include phishing and fake job posts.</p>
+      <p>Protect yourself by staying informed.</p>
+      <ul>
+        <li>Never share your password.</li>
+        <li>Avoid suspicious links.</li>
+        <li>Use <code>encrypt(password);</code> for security.</li>
+      </ul>
+      <code>let securityTip = "Enable 2FA";</code>
+    </section>
+
+    <section class="main-section">
+      <header>Vans Old skool shoes</header>
+      <p>The Vans Old Skool was introduced in 1977.</p>
+      <p>It remains a popular choice among skaters and casual wearers.</p>
+      <ul>
+        <li>Durable design</li>
+        <li>Signature side stripe</li>
+        <li>Skateboarding culture</li>
+      </ul>
+      <code>let shoeBrand = "Vans Old Skool";</code>
+    </section>
+
+    <section class="main-section">
+      <header>Head phone</header>
+      <p>Headphones come in various designs: in-ear, over-ear, etc.</p>
+      <p>Wireless headphones offer better mobility.</p>
+      <ul>
+        <li>Over-ear</li>
+        <li>In-ear</li>
+        <li>Noise-canceling</li>
+      </ul>
+      <code>const headphones = "Wireless";</code>
+    </section>
+  </main>
+
+  <script>
+    document.querySelectorAll('.main-section').forEach(section => {
+      const header = section.querySelector('header');
+      if (header) {
+        const id = header.textContent.trim().replace(/\s+/g, '_');
+        section.id = id;
+      }
+    });
+  </script>
+
+</body>
+
+</html>

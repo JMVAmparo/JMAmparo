@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>ProductLanding</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <style>
+   
+* {
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+
+  }
+  #about {
+    margin-top: 100px;
+  }
+  body {
+    line-height: 1.7;
+    display: flex;
+    flex-direction: column;
+    background-color: #3b2721;
+    background-image: url("https://www.shutterstock.com/image-illustration/black-motorcycle-on-dark-background-600nw-1678269418.jpg");
+    
+ 
+
+  }
+  
+ 
+  #header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #252525;
+    color: rgb(131, 130, 130);
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  #header-img {
+    height: 50px;
+    margin-right: 2px;
+  }
+  
+  #nav-bar {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .nav-link {
+    color: rgba(43, 42, 43, 0.438);
+    text-decoration: none;
+  }
+  
+  .nav-link:hover {
+    text-decoration: underline;
+  }
+  
+
+  main {
+    margin-top: 80px; 
+    padding: 20px;
+  }
+  
+  
+  
+ 
+  #form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin-top: 250px;
+  }
+  
+  #email {
+    width: 100%;
+    height: px; 
+    padding: 10px;
+    color: black;
+    margin: 10px 0;
+    border: 1px solid black;
+  }
+  
+  #submit {
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #submit:hover {
+    background-color: #555;
+  }
+  ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+  }
+  .card {
+    border: 2px solid #333;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 15px;
+    width: 350px;
+  }
+  ul img {
+    width: 350px;
+    height: 250px;
+  }
+  iframe {
+    text-align: center;
+  }
+
+
+  @media (max-width: 768px) {
+    #header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
+    #nav-bar {
+      margin-top: 10px;
+    }
+  
+    #form {
+      width: 100%;
+    }
+
+  
+  }
+
+    div{
+        color: rgb(255, 255, 255);
+    }
+
+    h2, p{
+         color: rgb(255, 255, 255);
+    }
+
+
+  </style>
+  <body>
+    <header id="header">
+      <img id="header-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRc6J5ngRfy7gRa9uzy-ZP-W43mjmuZCpdfFA&s">
+      <nav id="nav-bar">
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#video">Video</a>
+        <a class="nav-link" href="#Unit">SignUp</a>
+      </nav>
+    </header>
+    <section id="about">
+      <h2>Motorcycle</h2>
+    <p>Th:</p>
+    <ul>
+        <div class="card"><li><strong>Ducati:</strong> Ducati is still one of the most iconic brands with regard to big displacement motorcycles with power, flare, and a sporting pedigree. The name Ducati is still one of the most recognizable names in the industry.</li>
+        <img src="https://ducati.com.ph/wp-content/uploads/2023/07/PANIGALE-V4-S-thumb.webp"><p>₱50,999,999.</p></div>
+       
+        <div class="card"><li><strong>MC.Suzuki:</strong> In the context of Suzuki Motorcycles Philippines, "mc.suzuki.com.ph" likely refers to the official website for Suzuki motorcycles in the Philippines. </li>
+        <img src="https://mc.suzuki.com.ph/wp-content/uploads/2023/11/image-7-16.webp"><p>₱PHP 10,750,000.</p></div>
+        <div class="card"><li><strong>BMW R :</strong> The BMW GS is simply an icon of two-wheel motoring. Ewan McGregor and Charley Boorman in Long Way Round did more for the GS’s cachet than decades of BMW marketing.</li>
+        <img src="https://www.hondaph.com/honda-bigbikes/images/products/643df38049121.png"><p>₱15,567,98.00.</p></div>
+    </ul>
+    </section>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/LQ7YHzYuVWw?si=_tGt3xvzbZVJBhgH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <form id="form" action="https://www.freecodecamp.com/email-submit">
+      <input type="email" id="email" name="email" placeholder="Enter Email" required>
+      <input type="submit" id="submit">
+    </form>
+  </body>
+</html>

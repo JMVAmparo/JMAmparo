@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+       
+    header {
+        background: linear-gradient(135deg, #65bcee, #ff7be3);
+        padding: 20px;
+        text-align: center;
+    }
+    nav a {
+        color: white;
+        margin: 0 20px;
+        text-decoration: none;
+    }
+    nav a:hover {
+        color: #ff758c;
+    }
+    #intro {
+        max-width: 820px;
+        margin: 40px auto;
+        padding: 20px;
+        text-align: center;
+        background: #e6f7ff;
+        border-radius: 15px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    }
+    #intro h2 {
+        color: #6b48ff;
+    }
+    #intro button {
+        background-color: #ebac00e8;
+        color: white;
+        border: none;
+        padding: 10px 25px;
+        border-radius: 25px;
+        cursor: pointer;
+        transition: background-color 0.3s, transform 0.2s;
+    }
+    #intro button:hover {
+        background-color: #ff5722;
+        transform: translateY(-3px);
+    }
+    #projects {
+        max-width: 800px;
+        margin: 40px auto;
+        padding: 20px;
+        text-align: center;
+    }
+    #project h2 {
+        color: #48bcff;
+    }
+    .projects {
+        background-color: #004ec4ec;
+        display: contents;
+    
+    }
+    .project-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+    }
+    .project-card {
+        background: #004ec4ec;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 2px 6x rgba(0, 0, 0, 0.01);
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .project-card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+    footer {
+        background-color: #9c8e0ae0;
+        color: white;
+        padding: 20px;
+        text-align: center;
+    }
+    .social-links a {
+        color: #00ddeb;
+        margin: 0 15px;
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+    .social-links a:hover {
+        color: #044a66;
+        animation: bounce 0.5s;
+    }
+    @keyframes bounce {
+        0%, 20%, 50%, 80%, 100% {
+            transform: translateY(0);
+        }
+        40% {
+            transform: translateY(-10px);
+        }
+        60% {
+            transform: translateY(-5px);
+        }
+    }
+    body.dark-mode {
+        background-color: #c2c2c2;
+        color: #ddd;
+    }
+       
+
+</style>
+<body>
+    <header>
+        <h1>Jhay Em</h1>
+            <nav>
+                <a href="#intro">Home</a>
+                <a href="#project">Project</a>
+                <a href="#footer">Contact</a>
+            </nav>
+    </header>
+        <section id="intro">
+            <h2>About Me</h2>
+            <p>Hi, I'm Jm Amparo!  I'm a web develover passionate about crafting clean, user-friendly websites.</p>
+            <button id="dark-mode-toggle">Dark Mode</button>
+        </section>
+        <section id="projects">
+            <h2>My Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3>Project </h3>
+                    <a href="TechinicalDocumentation.html"><p>Technical Documents </p></a>
+                </div>
+                <div class="project-card">
+                    <h3>Project </h3>
+                    <a href="EDUNews.html.html"><p>Edunews Documents</p></a>
+                    
+                </div>
+                <div class="project-card">
+                    <h3>Project </h3>
+                    <a href="beat as one/"> <p> Beat as ONe </p></a>
+                    <p> My Fam </p>
+                   
+                </div>
+                <div class="project-card">
+                    <h3>Project </h3>
+                    <a href="building Cafe/"><p>building Cafe</p></a>
+
+                </div>
+                <div class="project-card">
+                    <h3>Project </h3>
+                    <a href="CSS building cat/"><p>CSS Building Cat</p></a>
+                    
+                </div>
+                <div class="project-card">
+                    <h3>Project </h3> 
+                    <a href="Color Marker/"> <p>Color Maker</p></a>
+                </div>
+                
+                <div class="project-card">
+                    <h3>Project </h3>
+                    <a href="Catphoto.html"> <p>Cat Photo</p></a>
+                </div>
+                
+                <div class="project-card">
+                    <h3>Project </h3>
+                    <a href="RothkoPainting.html"> <p>Rothko</p></a>
+                </div>
+                
+                <div class="project-card">
+                    <h3>Project </h3>
+                    <a href="RegisterForm.html"> <p>RegisterForm</p></a>
+                </div>
+                
+                <div class="project-card">
+                    <h3>Project </h3>
+                    <a href="TributePage.Html"> <p>Color Maker</p></a>
+                </div>
+
+                <div class="project-card">
+                    <h3>Project </h3>
+                    <a href="BalanceSheet.html"> <p>Balance Sheet</p></a>
+                </div>
+
+                <div class="project-card">
+                    <h3>Project </h3>
+                    <a href="BuildingCafe.html"> <p>BuildingCafe</p></a>
+                </div>
+                
+                <div class="project-card">
+                    <h3>Project </h3>
+                    <a href="BuildingMagazine.html"> <p>Magazine</p></a>
+                </div>
+
+                <div class="project-card">
+                    <h3>Project </h3>
+                    <a href="BuildingPiano.html"> <p>Piano</p></a>
+                </div>
+
+                <div class="project-card">
+                    <h3>Project </h3>
+                    <a href="BuildingQuiz.html"> <p>BuildingQuiz</a>
+                </div>
+
+                <div class="project-card">
+                    <h3>Project </h3>
+                    <a href="Catpainting.html"> <p>Painting</p></a>
+                </div>
+
+                <div class="project-card">
+                    <h3>Project /h3>
+                    <a href="FerrisWeel.html"> <p>FerrisWeel</p></a>
+                </div>
+
+                <div class="project-card">
+                    <h3>Project </h3>
+                    <a href="NutritionLabel.html"> <p>Nutrition</p></a>
+                </div>
+
+                <div class="project-card">
+                    <h3>Project </h3>
+                    <a href="Penguin.html"> <p>Penguin</p></a>
+                </div>
+
+                <div class="project-card">
+                    <h3>Project </h3>
+                    <a href="PhotoGallery.html"> <p>PhotoGallery</p></a>
+                </div>
+
+                <div class="project-card">
+                    <h3>Project </h3>
+                    <a href="ProductLanding.html"> <p>ProductLanding</p></a>
+                </div>
+
+                <div class="project-card">
+                    <h3>Project </h3>
+                    <a href="RegisterForm.html"> <p>RegisterForm</p></a>
+                </div>
+
+                <div class="project-card">
+                    <h3>Project </h3>
+                    <a href="SurveyForm.html"> <p>Survey</p></a>
+                </div>
+
+                <div class="project-card">
+                    <h3>Project </h3>
+                    <a href="TechinicalDocumentation.html"> <p>TechinicalDocumentation</p></a>
+                </div>
+
+                <div class="project-card">
+                    <h3>Project </h3>
+                    <a href="WebPage.html"> <p>WebPage</p></a>
+                </div>
+
+                <div style="text-align: center; margin-top: 2em;">
+                    <img src="Certificate/Certificate.png"
+                     alt="Certificate" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+                </div>
+        
+            </div>
+           
+        </section>
+        <button id="scroll-to-top">↑ Back to Top</button>
+        <footer id="footer">
+            <p>Let's connect</p>
+            <div class="social-links">
+                <a href="#">Twitter</a>
+                <a href="#">GitHub</a>
+                <a href="#">LinkedIn</a>
+                
+            </div>
+        </footer>
+
+        <script>
+            const darkModeToggle = document.getElementById('dark-mode-toggle');
+            const scrollButton = document.getElementById('scoll-to-top');
+
+            darkModeToggle.addEventListener('click', () => {
+                document.body.classList.toggle('dark-mode');
+                darkModeToggle.textContent = document.body.classList.contains('dark-mode') ? 'Light Mode' : 'Dark Mode';
+            });
+
+            window.addEventListener('scroll', () => {
+                scrollButton.style.display = window.scrollY > 100 ? 'block' : 'none';
+            });
+
+            scrollButton.addEventListener('click', () => {
+                window.scrollTo({top: 0, behavior: 'smooth'});
+            });
+        </script>
+        
+        
+</body>
+
+
+</html>
